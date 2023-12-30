@@ -1,11 +1,13 @@
 # Advent of Code 2023
 
 This repository contains my solutions to Advent of Code 2023, along with
-explanations of my thought processes and analyses of my solutions.  
+explanations of my thought processes and analyses of my solutions. Note that
+most of the days were organized after the event in order to make everything
+more readable.  
 Feel free to [ask for clarifications on anything](https://github.com/ArcWandx/Advent-of-Code-2023/issues/new/choose)!
 
-[My directory setup](./solutions/0), which contains an explanation of my templates and my
-overall workflow.
+[My directory setup](./solutions/0), which contains an explanation of my
+templates and my overall workflow.
 
 ## Solutions
 
