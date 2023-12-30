@@ -4,36 +4,36 @@ This repository contains my solutions to Advent of Code 2023, along with
 explanations of my thought processes and analyses of my solutions.  
 Feel free to [ask for clarifications on anything](https://github.com/ArcWandx/Advent-of-Code-2023/issues/new/choose)!
 
-[My directory setup](./0), which contains an explanation of my templates and my
+[My directory setup](./solutions/0), which contains an explanation of my templates and my
 overall workflow.
 
 ## Solutions
 
-* [Day 1](./01)
-* [Day 2](./02)
-* [Day 3](./03)
-* [Day 4](./04)
-* [Day 5](./05)
-* [Day 6](./06)
-* [Day 7](./07)
-* [Day 8](./08)
-* [Day 9](./09)
-* [Day 10](./10)
-* [Day 11](./11)
-* [Day 12](./12)
-* [Day 13](./13)
-* [Day 14](./14)
-* [Day 15](./15)
-* [Day 16](./16)
-* [Day 17](./17)
-* [Day 18](./18)
-* [Day 19](./19)
-* [Day 20](./20)
-* [Day 21](./21)
-* [Day 22](./22)
-* [Day 23](./23)
-* [Day 24](./24)
-* [Day 25](./25)
+* [Day 1](./solutions/01)
+* [Day 2](./solutions/02)
+* [Day 3](./solutions/03)
+* [Day 4](./solutions/04)
+* [Day 5](./solutions/05)
+* [Day 6](./solutions/06)
+* [Day 7](./solutions/07)
+* [Day 8](./solutions/08)
+* [Day 9](./solutions/09)
+* [Day 10](./solutions/10)
+* [Day 11](./solutions/11)
+* [Day 12](./solutions/12)
+* [Day 13](./solutions/13)
+* [Day 14](./solutions/14)
+* [Day 15](./solutions/15)
+* [Day 16](./solutions/16)
+* [Day 17](./solutions/17)
+* [Day 18](./solutions/18)
+* [Day 19](./solutions/19)
+* [Day 20](./solutions/20)
+* [Day 21](./solutions/21)
+* [Day 22](./solutions/22)
+* [Day 23](./solutions/23)
+* [Day 24](./solutions/24)
+* [Day 25](./solutions/25)
 
 ## Rankings
 
