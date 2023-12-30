@@ -9,6 +9,7 @@ using namespace std;
 
 #define FOR(i, a) for (int i = 0; i < (int)(a); i++)
 #define FORR(i, a, b) for (int i = a; i < (int)(b); i++)
+#define FOR_(i, a, b) for (int i = a; i >= (int)(b); i--)
 #define len(a) ((int)a.size())
 #define long long long
 #define vec vector
