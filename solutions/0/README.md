@@ -84,4 +84,3 @@ language and start coding. I first ensure that my solution works on the input da
 and that there's no logical flaws I can find; then, I run my solution on my input.
 
 Once I've solved both parts, I'll write my answers down to a text file called `answer`.
-
