@@ -1,0 +1,236 @@
+broadcaster -> BroadCaster
+destinations:  hd xt kj zt
+inputs: 
+
+&hp -> Conjunction
+destinations:  rx
+inputs:  sr vq sn rf
+
+==============================
+&vq -> Conjunction
+destinations:  hp
+inputs:  gk
+
+&gk -> Conjunction
+destinations:  vq vv br zt dj xg
+inputs:  fm pd cz kb nt rd zt ph
+
+%zt -> FlipFlop
+destinations:  gk xg
+inputs:  gk broadcaster
+
+%xg -> FlipFlop
+destinations:  rd
+inputs:  gk zt
+
+%rd -> FlipFlop
+destinations:  gk cz
+inputs:  xg
+
+%cz -> FlipFlop
+destinations:  gk vv
+inputs:  rd
+
+%vv -> FlipFlop
+destinations:  br
+inputs:  gk cz
+
+%br -> FlipFlop
+destinations:  fm
+inputs:  gk vv
+
+%fm -> FlipFlop
+destinations:  dj gk
+inputs:  br
+
+%dj -> FlipFlop
+destinations:  pd
+inputs:  fm gk
+
+%pd -> FlipFlop
+destinations:  gk kb
+inputs:  dj
+
+%kb -> FlipFlop
+destinations:  nt gk
+inputs:  pd
+
+%nt -> FlipFlop
+destinations:  ph gk
+inputs:  kb
+
+%ph -> FlipFlop
+destinations:  gk
+inputs:  nt
+
+==============================
+&sr -> Conjunction
+destinations:  hp
+inputs:  gx
+
+&gx -> Conjunction
+destinations:  mz sh tt sr kj tk
+inputs:  gd hs nf kj lr rv ck gf
+
+%kj -> FlipFlop
+destinations:  gx hs
+inputs:  gx broadcaster
+
+%hs -> FlipFlop
+destinations:  gx tk
+inputs:  kj
+
+%tk -> FlipFlop
+destinations:  tt
+inputs:  hs gx
+
+%tt -> FlipFlop
+destinations:  gf
+inputs:  gx tk
+
+%gf -> FlipFlop
+destinations:  gx sh
+inputs:  tt
+
+%sh -> FlipFlop
+destinations:  lr
+inputs:  gx gf
+
+%lr -> FlipFlop
+destinations:  mz gx
+inputs:  sh
+
+%mz -> FlipFlop
+destinations:  rv
+inputs:  lr gx
+
+%rv -> FlipFlop
+destinations:  gx ck
+inputs:  mz
+
+%ck -> FlipFlop
+destinations:  gx nf
+inputs:  rv
+
+%nf -> FlipFlop
+destinations:  gx gd
+inputs:  ck
+
+%gd -> FlipFlop
+destinations:  gx
+inputs:  nf
+
+==============================
+&sn -> Conjunction
+destinations:  hp
+inputs:  xr
+
+&xr -> Conjunction
+destinations:  sn sb hd
+inputs:  bz fh dl jh gr rq hd tp rg zn xs
+
+%hd -> FlipFlop
+destinations:  tp xr
+inputs:  xr broadcaster
+
+%tp -> FlipFlop
+destinations:  xr rq
+inputs:  hd
+
+%rq -> FlipFlop
+destinations:  gr xr
+inputs:  tp
+
+%gr -> FlipFlop
+destinations:  zn xr
+inputs:  rq
+
+%zn -> FlipFlop
+destinations:  fh xr
+inputs:  gr
+
+%fh -> FlipFlop
+destinations:  xr xs
+inputs:  zn
+
+%xs -> FlipFlop
+destinations:  sb xr
+inputs:  fh
+
+%sb -> FlipFlop
+destinations:  jh
+inputs:  xr xs
+
+%jh -> FlipFlop
+destinations:  xr bz
+inputs:  sb
+
+%bz -> FlipFlop
+destinations:  xr rg
+inputs:  jh
+
+%rg -> FlipFlop
+destinations:  xr dl
+inputs:  bz
+
+%dl -> FlipFlop
+destinations:  xr
+inputs:  rg
+
+==============================
+&rf -> Conjunction
+destinations:  hp
+inputs:  tf
+
+&tf -> Conjunction
+destinations:  cc rf kk xt gq
+inputs:  jm kr fc pj dk cr xt tb qx
+
+%xt -> FlipFlop
+destinations:  cc tf
+inputs:  tf broadcaster
+
+%cc -> FlipFlop
+destinations:  cr
+inputs:  xt tf
+
+%cr -> FlipFlop
+destinations:  kk tf
+inputs:  cc
+
+%kk -> FlipFlop
+destinations:  fc
+inputs:  tf cr
+
+%fc -> FlipFlop
+destinations:  qx tf
+inputs:  kk
+
+%qx -> FlipFlop
+destinations:  tf gq
+inputs:  fc
+
+%gq -> FlipFlop
+destinations:  jm
+inputs:  tf qx
+
+%jm -> FlipFlop
+destinations:  pj tf
+inputs:  gq
+
+%pj -> FlipFlop
+destinations:  tf dk
+inputs:  jm
+
+%dk -> FlipFlop
+destinations:  tb tf
+inputs:  pj
+
+%tb -> FlipFlop
+destinations:  kr tf
+inputs:  dk
+
+%kr -> FlipFlop
+destinations:  tf
+inputs:  tb
+
