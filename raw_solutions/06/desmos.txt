@@ -1,0 +1,11 @@
+Desmos input for p2:
+n = 313109012141201
+k = 53897698
+a = 1
+b = k - a
+ab - n
+b - a + 1
+
+Vary a until ab-n is barely postive
+a is a slider with step 1. Iteratively set the bounds smaller.
+Answer is b-a+1
