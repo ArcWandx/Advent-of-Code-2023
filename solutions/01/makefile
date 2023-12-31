@@ -1,21 +1,20 @@
-out: test.cpp
-	g++ -o out test.cpp -Wall -Wextra
+bin: bin/part1 bin/part2
 
-part1: part1.cpp
-	g++ -o part1 part1.cpp -Wall -Wextra
+bin/part1: src/part1.cpp
+	g++ -o bin/part1 src/part1.cpp -Wall -Wextra -g
 
-.PHONY: edit clean run replaced p1
-edit:
-	nvim test.cpp
+bin/part2: src/part2.cpp
+	g++ -o bin/part2 src/part2.cpp -Wall -Wextra -g
 
 clean:
-	rm -f out part1
+	rm -f bin/*
 
-run: out
-	./out < input
+p1: bin/part1
+	./bin/part1 < input/input
 
-replaced: part1
-	./part1 < replaced
+p2: bin/part2
+	./bin/part2 < input/input
 
-p1: part1
-	./part1 < input
+p2_alt: bin/part1
+	./bin/part1 < input/replaced
+
