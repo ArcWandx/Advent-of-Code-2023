@@ -5,7 +5,7 @@ explanations of my thought processes and analyses of my solutions.
 
 Note that most of the days were organized after the event in order to make
 everything more readable. If you want to see the original solutions, they are
-in `./raw_solutions`.
+in [`./original_solutions`](./original_solutions).
 
 Feel free to [ask for clarifications on anything](https://github.com/ArcWandx/Advent-of-Code-2023/issues/new/choose)!
 
