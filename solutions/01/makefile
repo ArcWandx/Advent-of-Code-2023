@@ -15,7 +15,7 @@ clean:
 p1: bin/part1
 	./bin/part1 < input/input
 
-p1_alt: bin/part1.alt
+p1_two: bin/part1.alt
 	./bin/part1.alt < input/input
 
 p2: bin/part2

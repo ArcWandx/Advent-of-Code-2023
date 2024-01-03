@@ -47,7 +47,7 @@ what is captured).
 Next, use the two regexes in tandem to extract the first and last digit, and
 remove everything else on the line:
 
-    :%s/^.\{-}\(\d\).*\(\d\).\{-}$/\1\2/g
+    :%s/^.\{-}\(\d\).*\(\d\).*$/\1\2/g
 
 Now that everything has been reduced to numbers, add them. My preferred way of doing
 this is to append a "`+`", and run it through python:
