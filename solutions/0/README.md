@@ -17,7 +17,8 @@ allows me to quickly compile by just typing `make`. In a similar vein, the
 manually.
 
 To run my program, I have two different targets depending on what language is used:
-`run` is for C++ and `py` is for Python.
+`run` is for C++ and `py` is for Python. Both targets expect the program to read
+a file using redirection from standard input.
 
 The `test` target by default in this template depends on the compiled C++ binary.
 In all cases, I use it to run the sample input. On days where I think Python is
@@ -72,7 +73,7 @@ template. For example, to create the Day 1 project directory: `cp -r 0 01`.
 Upon the release of the day's challenge, I immediately copy-paste the sample
 input into a text file called `small`, and copy-paste my input into a textfile
 called `input`. Both of these actions are done by hand; it takes ~5 seconds, so
-it is not worth automating.  
+it is not worth automating.
 
 Next, I read the problem in its entirety. This usually takes too much time for
 me to have shot at the global leaderboards, but this is fine by me; I think it's
