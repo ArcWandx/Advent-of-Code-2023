@@ -1,13 +1,5 @@
-out: cpp.cpp
-	g++ -o out cpp.cpp -Wall -Wextra
+p1:
+	python3 src/1.py < input/input
 
-.PHONY: clean run py
-clean:
-	rm -f out
-
-run: out
-	./out < input
-
-py:
-	python3 py.py < input
-
+p2:
+	python3 src/2.py < input/input
