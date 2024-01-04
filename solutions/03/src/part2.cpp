@@ -37,10 +37,6 @@ void print_grids() {
 	}
 }
 
-bool is_part(char c) {
-	return !isdigit(c) && c != '.';
-}
-
 bool is_gear(char c) {
 	return c == '*';
 }
