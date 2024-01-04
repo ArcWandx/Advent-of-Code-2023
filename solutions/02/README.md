@@ -24,5 +24,5 @@ Run with `make p2`.
 
 ## Rankings
 
-    Part 1: 00:27:22, 6291st`
+    Part 1: 00:27:22, 6291st
     Part 2: 00:31:17, 5478th
