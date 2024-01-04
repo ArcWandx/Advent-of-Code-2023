@@ -10,8 +10,14 @@ clean:
 	rm -f bin/*
 
 p1: bin/part1
-	bin/part1 < input
+	bin/part1 < input/input
 
 p2: bin/part2
-	bin/part2 < input
+	bin/part2 < input/input
+
+p1_test: bin/part1
+	bin/part1 < input/small
+
+p2_test: bin/part2
+	bin/part2 < input/small
 
