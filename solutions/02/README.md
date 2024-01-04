@@ -1,4 +1,4 @@
-# Day 2
+# [Day 2](https://adventofcode.com/2023/day/2)
 
 This day was mostly about input parsing. Python's `.split()` was therefore incredibly
 useful.

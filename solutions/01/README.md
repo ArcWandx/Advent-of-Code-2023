@@ -1,4 +1,4 @@
-# Day 1
+# [Day 1](https://adventofcode.com/2023/day/1)
 
 ## Part 1
 
