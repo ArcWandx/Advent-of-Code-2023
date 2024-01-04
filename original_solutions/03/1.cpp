@@ -41,10 +41,6 @@ bool is_part(char c) {
 	return !isdigit(c) && c != '.';
 }
 
-bool is_gear(char c) {
-	return c == '*';
-}
-
 bool is_valid(int r, int c) {
 	if (r < 0 || r >= len(grid) || c < 0 || c >= len(grid[r])) { return false; }
 	if (nums[r][c] == nullptr) { return false; }
@@ -79,7 +75,7 @@ int main() {
 
 	FOR(r, len(grid)) {
 		FOR(c, len(grid[r])) {
-			if (!is_gear(grid[r][c])) { continue; }
+			if (!is_part(grid[r][c])) { continue; }
 			FORR(dr, -1, 2) {
 				FORR(dc, -1, 2) {
 					int nr = r + dr;
@@ -91,15 +87,19 @@ int main() {
 		}
 	}
 
-	int sum = 0;
+	uset<int*> seen;
 	FOR(r, len(grid)) {
 		FOR(c, len(grid[r])) {
-			if (!is_gear(grid[r][c])) { continue; }
-			if (parts[r][c].size() != 2) { continue; }
-			int ratio = 1;
-			for (int* p : parts[r][c]) { ratio *= *p; }
-			sum += ratio;
+			if (parts[r][c].size() == 0) { continue; }
+			for (int* num : parts[r][c]) {
+				seen.insert(num);
+			}
 		}
+	}
+
+	int sum = 0;
+	for (int* num : seen) {
+		sum += *num;
 	}
 	cout << sum << endl;
 
