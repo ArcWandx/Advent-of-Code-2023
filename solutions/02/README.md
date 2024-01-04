@@ -21,3 +21,8 @@ Now, for each game, keep track of the max number of each color. Once all rounds
 have been processed, simply multiply them to calculate the color and add them.
 
 Run with `make p2`.
+
+## Rankings
+
+    Part 1: 00:27:22, 6291st`
+    Part 2: 00:31:17, 5478th

@@ -74,3 +74,8 @@ in this manner to avoid breaking up groups that share letters. For example,
 the find and replace to not replace the 8.
 
 Run using `make p2_alt`.
+
+## Rankings
+
+    Part 1: 00:06:51, 3278th
+    Part 2: 00:40:21, 4591st
