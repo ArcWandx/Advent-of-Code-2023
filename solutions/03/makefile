@@ -1,15 +1,17 @@
-test: out
-	./out < small
+bin: bin/part1 bin/part2
 
-run: out
-	./out < input
+bin/part1: src/part1.cpp
+	g++ -o bin/part1 src/part1.cpp -Wall -Wextra
 
-py:
-	python3 py.py < input
-
-out: cpp.cpp
-	g++ -o out cpp.cpp -Wall -Wextra
+bin/part2: src/part2.cpp
+	g++ -o bin/part2 src/part2.cpp -Wall -Wextra
 
 clean:
-	rm -f out
+	rm -f bin/*
+
+p1: bin/part1
+	bin/part1 < input
+
+p2: bin/part2
+	bin/part2 < input
 
