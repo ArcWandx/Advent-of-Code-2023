@@ -1,9 +1,9 @@
 import sys
 import random
 
-guess = False
 lower = 0
 upper = 300000000
+guesses = 500000
 
 def parse():
     arr = list(map(int, input().split()[1:]))
@@ -24,15 +24,10 @@ def in_range(n, i, d):
 
 def reverse_convert(n, alm):
     for section in reversed(alm):
-        #  print(n)
-        #  print("section: ")
-        #  print(section)
         for r in section:
             if in_range(n, r[0], r[2]):
-                #  print(f"found {n} between {r[0]}, within {r[2]}, map by {r[1]-r[0]}")
                 n += r[1] - r[0]
                 break
-    #  print(n)
     return n
 
 def in_seeds(n, seeds):
@@ -43,18 +38,17 @@ def in_seeds(n, seeds):
 
 arr, alm = parse()
 
-min_loc = upper
-for _ in range(1000000):
-    loc = random.randint(lower, min_loc)
+for _ in range(guesses):
+    loc = random.randint(lower, upper)
     l = reverse_convert(loc, alm)
 
-    if in_seeds(l, arr) and loc < min_loc:
+    if in_seeds(l, arr):
         print(loc)
-        min_loc = loc
+        upper = loc
 
-print("Last guess: " + str(min_loc))
+print("Last guess: " + str(upper))
 
-for loc in range(min_loc, -1, -1):
+for loc in range(upper, lower-1, -1):
     l = reverse_convert(loc, alm)
     if in_seeds(l, arr):
         print(loc)
