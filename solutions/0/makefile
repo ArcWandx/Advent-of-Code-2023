@@ -8,7 +8,7 @@ run: out
 	./out < input
 
 py:
-	python3 py.py < input
+	python py.py < input
 
 clean:
 	rm -f out

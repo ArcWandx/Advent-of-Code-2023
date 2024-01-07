@@ -2,8 +2,6 @@
 
 ## Part 1
 
-## Part 2
-
 ## Rankings
 
     Part 1: 00:14:55, 129th

@@ -2,7 +2,13 @@
 
 ## Part 1
 
+Run on my input using `make p1`.  
+Run on the sample input using `make p1_test`.
+
 ## Part 2
+
+Run on my input using `make p1`.  
+Run on the sample input using `make p1_test`.
 
 ## Rankings
 

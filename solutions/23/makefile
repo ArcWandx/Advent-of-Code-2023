@@ -18,13 +18,13 @@ run2: out
 	./out < parsed
 
 test:
-	python3 py.py < small
+	python py.py < small
 
 py:
-	python3 py.py < input
+	python py.py < input
 
 p2:
-	python3 py.py < parsed
+	python py.py < parsed
 
 clean:
 	rm -f out

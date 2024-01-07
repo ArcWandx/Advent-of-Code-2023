@@ -22,8 +22,14 @@ p2_test: bin/part2
 	bin/part2 < input/small
 
 p1:
-	python3 src/part1.py < input
+	python src/part1.py < input/input
 
 p2:
-	python3 src/part2.py < input
+	python src/part2.py < input/input
+
+p1_test:
+	python src/part1.py < input/small
+
+p2_test:
+	python src/part2.py < input/small
 
