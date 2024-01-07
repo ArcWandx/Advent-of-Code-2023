@@ -1,28 +1,30 @@
 import sys
-#  num_cards = 6
-num_cards = 204
+num_cards = int(sys.argv[1])
 
-out = 0
-cards = [1 for _ in range(num_cards+1)]
-cards[0] = 0
-for line in sys.stdin:
+def parse(line):
     id = int(line.split(": ")[0].split()[1])
     win, nums = line.split(": ")[1].split(" | ")
     win = win.split()
     nums = nums.split()
+    return id, win, nums
 
-    # Part 1
+def count_wins(win, nums):
     count = 0
     for i in win:
         if i in nums:
             count += 1
-    if count == 0:
-        continue
-    out += 2 ** (count - 1)
+    return count
 
-    # Part 2
-    for i in range(id+1, id+count+1):
+# List of counts of all cards
+cards = [1 for _ in range(num_cards+1)]
+# There is no 0th card
+cards[0] = 0
+for line in sys.stdin:
+    id, win, nums = parse(line)
+    wins = count_wins(win, nums)
+
+    # Add the scratch cards won
+    for i in range(id+1, id+wins+1):
         cards[i] += cards[id]
 
-print(out)
 print(sum(cards))
