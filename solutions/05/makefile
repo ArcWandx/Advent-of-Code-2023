@@ -1,29 +1,12 @@
-bin: bin/part1 bin/part2
-
-bin/part1: src/part1.cpp
-	g++ -o bin/part1 src/part1.cpp -Wall -Wextra
-
-bin/part2: src/part2.cpp
-	g++ -o bin/part2 src/part2.cpp -Wall -Wextra
-
-clean:
-	rm -f bin/*
-
-p1: bin/part1
-	bin/part1 < input/input
-
-p2: bin/part2
-	bin/part2 < input/input
-
-p1_test: bin/part1
-	bin/part1 < input/small
-
-p2_test: bin/part2
-	bin/part2 < input/small
-
 p1:
-	python3 src/part1.py < input
+	python src/part1.py < input/input
 
 p2:
-	python3 src/part2.py < input
+	python src/part2.py < input/input
+
+p1_test:
+	python src/part1.py < input/small
+
+p2_test:
+	python src/part2.py < input/small
 
